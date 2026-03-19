@@ -96,6 +96,32 @@
           }
         }
       }
+    },
+    "u-core": {
+      "projectType": "library",
+      "root": "projects/u-core",
+      "sourceRoot": "projects/u-core/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:ng-packagr",
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/u-core/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/u-core/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular/build:unit-test",
+          "options": {
+            "tsConfig": "projects/u-core/tsconfig.spec.json"
+          }
+        }
+      }
     }
   },
   "schematics": {

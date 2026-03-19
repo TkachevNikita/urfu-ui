@@ -2,6 +2,11 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "u-core": [
+        "./dist/u-core"
+      ]
+    },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
@@ -25,5 +30,13 @@
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
-  }
+  },
+  "references": [
+    {
+      "path": "./projects/u-core/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/u-core/tsconfig.spec.json"
+    }
+  ]
 }
