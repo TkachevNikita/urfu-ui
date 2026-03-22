@@ -7,9 +7,9 @@ import {
 @Component({
   selector: 'u-global-styles',
   styleUrls: [
-    '../../styles/constants.css',
-    '../../styles/global.css',
-    '../../styles/typography.css',
+    '../styles/constants.css',
+    '../styles/global.css',
+    '../styles/typography.css',
   ],
   template: `<ng-content />`,
   encapsulation: ViewEncapsulation.None,

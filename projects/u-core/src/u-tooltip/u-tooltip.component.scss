@@ -3,10 +3,11 @@
   color: var(--white);
   padding: 12px 20px;
   border-radius: 8px;
-  white-space: nowrap;
   font-size: 14px;
   z-index: 10;
   animation: onMount 0.3s ease-in-out;
+  max-width: 250px;
+  text-align: center;
 
   &:not(.bottom) {
     &::after {

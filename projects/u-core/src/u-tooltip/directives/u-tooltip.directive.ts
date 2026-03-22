@@ -7,6 +7,7 @@ import {
   inject,
   input,
   OnInit,
+  OnDestroy, // Добавляем
 } from '@angular/core';
 import {
   Overlay,
@@ -14,13 +15,13 @@ import {
   OverlayRef,
 } from '@angular/cdk/overlay';
 import { ComponentPortal } from '@angular/cdk/portal';
-import { UTooltipComponent } from '../components/u-tooltip/u-tooltip.component';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+import { UTooltipComponent } from '../u-tooltip.component';
 
 @Directive({
   selector: '[uTooltip]',
 })
-export class UTooltipDirective implements OnInit {
+export class UTooltipDirective implements OnInit, OnDestroy {
   private readonly overlay = inject(Overlay);
   private readonly overlayPositionBuilder = inject(OverlayPositionBuilder);
   private readonly elementRef = inject(ElementRef);
@@ -66,7 +67,7 @@ export class UTooltipDirective implements OnInit {
 
   @HostListener('mouseenter')
   public show(): void {
-    if (this.overlayRef) {
+    if (this.overlayRef && !this.overlayRef.hasAttached()) {
       const tooltipPortal = new ComponentPortal(UTooltipComponent);
       this.tooltipRef = this.overlayRef.attach(tooltipPortal);
       this.tooltipRef.instance.text.set(this.text());
@@ -75,8 +76,15 @@ export class UTooltipDirective implements OnInit {
 
   @HostListener('mouseout')
   public hide(): void {
-    if (this.overlayRef) {
+    if (this.overlayRef && this.overlayRef.hasAttached()) {
       this.overlayRef.detach();
+      this.tooltipRef = null;
+    }
+  }
+
+  public ngOnDestroy(): void {
+    if (this.overlayRef) {
+      this.overlayRef.dispose();
     }
   }
 }
