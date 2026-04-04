@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "storybook": "ng run uikit:storybook",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -43,6 +44,12 @@
     "ng-packagr": "^21.2.0",
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.57.1",
-    "vitest": "^4.0.8"
+    "vitest": "^4.0.8",
+    "storybook": "^10.3.3",
+    "@storybook/angular": "^10.3.3",
+    "@angular-devkit/build-angular": "^21.2.0",
+    "@angular-devkit/architect": "^0.2102.0",
+    "@angular-devkit/core": "^21.2.0",
+    "eslint-plugin-storybook": "^10.3.3"
   }
 }
