@@ -1,5 +1,5 @@
 {
-  "name": "u-core",
+  "name": "@urfu-ui/u-core",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^21.2.0",

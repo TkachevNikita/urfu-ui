@@ -3,9 +3,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "paths": {
-      "u-core": [
-        "./dist/u-core"
-      ]
+      "@urfu-ui/u-core": ["./dist/u-core"]
     },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,

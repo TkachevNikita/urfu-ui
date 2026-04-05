@@ -3,11 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
     "storybook": "ng run uikit:storybook",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "build:storybook": "ng run uikit:build-storybook",
+    "build:u-core": "ng build u-core"
   },
   "private": true,
   "dependencies": {

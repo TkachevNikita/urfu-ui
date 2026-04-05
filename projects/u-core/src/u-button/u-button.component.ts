@@ -30,8 +30,7 @@ export class UButtonComponent {
   });
 
   public readonly disabled = input(false);
-  public readonly variant = input<'outlined' | 'filled'>('filled');
-  public readonly theme = input<'prime' | 'outlined' | 'danger' | 'gray'>(
+  public readonly theme = input<'prime' | 'danger' | 'gray'>(
     'prime',
   );
   public readonly size = input<'small' | 'medium' | 'large'>('medium');

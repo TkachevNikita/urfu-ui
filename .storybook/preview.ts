@@ -1,4 +1,5 @@
-import type { Preview } from '@storybook/angular'
+import {componentWrapperDecorator, moduleMetadata, Preview} from '@storybook/angular'
+import {UGlobalStylesComponent} from "@urfu-ui/u-core";
 
 const preview: Preview = {
   parameters: {
@@ -9,6 +10,12 @@ const preview: Preview = {
       },
     },
   },
+  decorators: [
+    moduleMetadata({
+      imports: [UGlobalStylesComponent]
+    }),
+    componentWrapperDecorator((story) => `<u-global-styles/>${story}`)
+  ]
 };
 
 export default preview;

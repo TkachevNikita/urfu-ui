@@ -1,5 +1,5 @@
 {
-  "extends": "../tsconfig.app.json",
+  "extends": "../tsconfig.json",
   "compilerOptions": {
     "types": ["node"],
     "allowSyntheticDefaultImports": true,
@@ -7,6 +7,6 @@
     "moduleResolution": "bundler"
   },
   "exclude": ["../src/test.ts", "../src/**/*.spec.ts"],
-  "include": ["./**/*.stories.*", "./preview.ts"],
+  "include": ["../stories/*.stories.*", "./preview.ts", "../projects/**/*"],
   "files": ["./typings.d.ts"]
 }
