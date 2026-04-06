@@ -1,0 +1,58 @@
+.u-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  position: relative;
+
+  input[type="checkbox"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: 0;
+
+    &:checked + .u-checkbox__selection:before,
+    &:checked + .u-checkbox__selection,
+    &:checked + .u-checkbox__selection--indeterminate {
+      opacity: 1;
+      fill: var(--white);
+    }
+  }
+
+  &__text:empty {
+    display: none;
+  }
+
+  &__selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    width: 18px;
+    height: 18px;
+    outline: 2px solid var(--blue-60);
+    color: var(--white);
+    border-radius: 3px;
+    position: relative;
+    flex-shrink: 0;
+
+    &::before {
+      z-index: -1;
+      content: "";
+      position: absolute;
+      display: block;
+      width: 21px;
+      height: 21px;
+      border-radius: 3px;
+      background-color: var(--blue-main);
+      opacity: 0;
+      transition: .3s;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+<div
+  class="u-select"
+  [class.isOpen]="isOpen()"
+  (click)="togglePanel()"
+>
+  <div class="u-select__value">
+    @if (displayValue) {
+      {{ displayValue }}
+    } @else {
+      <div class="u-select__placeholder">
+        {{ placeholder() }}
+      </div>
+    }
+  </div>
+
+  <u-icon
+    class="u-select__icon"
+    [size]="18"
+    [iconId]="'down'"
+    [class.open]="isOpen()"
+  />
+</div>
+
+<ng-template #panel>
+  <div
+    class="u-select__options"
+    animate.enter="enter"
+    animate.done="leave"
+  >
+    <ng-content></ng-content>
+  </div>
+</ng-template>

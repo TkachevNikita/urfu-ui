@@ -2,7 +2,8 @@
   "compileOnSave": false,
   "compilerOptions": {
     "paths": {
-      "@urfu-ui/u-core": ["./projects/u-core/src/public-api.ts"]
+      "@urfu-ui/u-core": ["./projects/u-core/src/public-api.ts"],
+      "@urfu-ui/u-forms": ["./projects/u-forms/src/public-api.ts"],
     },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
@@ -34,6 +35,12 @@
     },
     {
       "path": "./projects/u-core/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/u-forms/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/u-forms/tsconfig.spec.json"
     }
   ]
 }

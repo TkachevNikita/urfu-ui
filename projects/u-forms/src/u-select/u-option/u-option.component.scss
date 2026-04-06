@@ -1,0 +1,25 @@
+:host:last-child {
+  .u-option {
+    border-bottom: none;
+  }
+}
+
+.u-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  color: var(--black-main);
+  padding: 14px 16px;
+  cursor: pointer;
+  font-size: 18px;
+  border-bottom: 1px solid var(--blue-20);
+
+  &__check {
+    pointer-events: none;
+  }
+
+  &:hover {
+    background-color: var(--light-blue);
+  }
+}
