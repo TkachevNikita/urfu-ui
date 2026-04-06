@@ -1,0 +1,16 @@
+<div
+  class="u-textarea"
+  [class.is-focused]="isFocused()"
+  [class.is-disabled]="isDisabled()"
+>
+  <textarea
+    class="u-textarea__native"
+    [placeholder]="placeholder()"
+    [rows]="rows()"
+    [value]="value"
+    [disabled]="isDisabled()"
+    (input)="onInput($event)"
+    (blur)="onBlur()"
+    (focus)="onFocus()"
+  ></textarea>
+</div>

@@ -1,0 +1,12 @@
+<div
+  class="u-option"
+  (click)="onClick()"
+>
+  {{ label() }}
+
+  @if (parent?.multiple()) {
+    <u-checkbox class="u-option__check" [checked]="selected()"/>
+  } @else if (selected()) {
+    <u-checkbox class="u-option__check" [checked]="selected()"/>
+  }
+</div>

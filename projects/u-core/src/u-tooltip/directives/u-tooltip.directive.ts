@@ -7,7 +7,7 @@ import {
   inject,
   input,
   OnInit,
-  OnDestroy, // Добавляем
+  OnDestroy,
 } from '@angular/core';
 import {
   Overlay,
