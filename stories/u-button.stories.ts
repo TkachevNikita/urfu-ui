@@ -36,7 +36,7 @@ export const Default: Story = {
     theme: 'prime',
     size: 'medium',
     disabled: false,
-    icon: 'icon-active',
+    icon: '',
     iconPosition: 'left',
     iconSize: 20,
   },

@@ -1,9 +1,8 @@
-/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
   "compileOnSave": false,
   "compilerOptions": {
     "paths": {
-      "@urfu-ui/u-core": ["./dist/u-core"]
+      "@urfu-ui/u-core": ["./projects/u-core/src/public-api.ts"]
     },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
