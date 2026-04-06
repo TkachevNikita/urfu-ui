@@ -1,0 +1,26 @@
+<div
+  class="u-input"
+  [class.is-focused]="isFocused()"
+  [class.is-disabled]="isDisabled()"
+  [class.has-icon-left]="!!iconLeftId()"
+  [class.has-icon-right]="!!iconRightId()"
+>
+  @if (iconLeftId()) {
+    <u-icon class="u-input__icon u-input__icon--left" [iconId]="iconLeftId()" [size]="24" />
+  }
+
+  <input
+    class="u-input__native"
+    type="text"
+    [placeholder]="placeholder()"
+    [value]="value"
+    [disabled]="isDisabled()"
+    (input)="onInput($event)"
+    (blur)="onBlur()"
+    (focus)="onFocus()"
+  />
+
+  @if (iconRightId()) {
+    <u-icon class="u-input__icon u-input__icon--right" [iconId]="iconRightId()" [size]="24" />
+  }
+</div>

@@ -1,0 +1,52 @@
+.u-input {
+  display: flex;
+  align-items: center;
+  min-width: 200px;
+  color: var(--black-main);
+  gap: 10px;
+  border: 1px solid var(--gray-20);
+  border-radius: 8px;
+  padding: 0 15px;
+  background: white;
+  transition: all 0.3s ease-in-out;
+  font-size: 18px;
+
+  &__native {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--black-main);
+    font-size: inherit;
+    font-family: inherit;
+    padding: 15px 0;
+    width: 100%;
+
+    &::placeholder {
+      color: var(--gray-60);
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+    }
+  }
+
+  &__icon {
+    flex-shrink: 0;
+    color: var(--blue-60);
+  }
+
+  &:hover,
+  &.is-focused {
+    border-color: var(--blue-60);
+  }
+
+  &.is-disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+
+    &:hover {
+      border-color: var(--gray-20);
+    }
+  }
+}

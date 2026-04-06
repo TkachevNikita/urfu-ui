@@ -1,0 +1,33 @@
+<div class="u-control">
+  @if (title() || tooltipText()) {
+    <div class="u-control__header">
+      @if (title()) {
+        <label class="u-control__title">
+          {{ title() }}
+          @if (required()) {
+            <span class="u-control__required">*</span>
+          }
+        </label>
+      }
+
+      @if (tooltipText()) {
+        <u-icon
+          class="u-control__icon"
+          [iconId]="'question'"
+          [size]="24"
+          [uTooltip]="tooltipText()"
+        />
+      }
+    </div>
+  }
+
+  <div class="u-control__content">
+    <ng-content/>
+  </div>
+
+  @if (description()) {
+    <div class="u-control__description">
+      {{ description() }}
+    </div>
+  }
+</div>
