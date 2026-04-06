@@ -1,0 +1,16 @@
+<button
+  [class]="buttonClasses()"
+  [disabled]="disabled()"
+>
+  @if (icon() && iconPosition() === 'left') {
+    <u-icon [iconId]="icon()!" [size]="iconSize()" class="u-button__icon" />
+  }
+
+  <span class="u-button__content">
+    <ng-content/>
+  </span>
+
+  @if (icon() && iconPosition() === 'right') {
+    <u-icon [iconId]="icon()!" [size]="iconSize()" class="u-button__icon" />
+  }
+</button>

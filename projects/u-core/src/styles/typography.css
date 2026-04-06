@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap');
+
+:root {
+  --font-family: "Golos Text";
+  --font-size-h1: 52px;
+  --font-size-h2: 40px;
+  --font-size-h3: 24px;
+  --font-size-h4: 18px;
+  --font-size-h5: 16px;
+  --font-size-simple-text: 16px;
+  --font-size-table-header: 14px;
+  --font-size-table-text: 14px;
+  --font-size-button: 13px;
+  --font-size-descriptor: 12px;
+  --font-size-descriptor-bold: 12px;
+
+  --line-height-h1: 56px;
+  --line-height-h2: 44px;
+  --line-height-h3: 28px;
+  --line-height-h4: 24px;
+  --line-height-h5: 24px;
+  --line-height-simple-text: 24px;
+  --line-height-table-header: 20px;
+  --line-height-table-text: 20px;
+  --line-height-button: 16px;
+  --line-height-descriptor: 20px;
+  --line-height-descriptor-bold: 20px;
+}

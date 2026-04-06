@@ -1,0 +1,35 @@
+.u-badge {
+  font-weight: 600;
+  width: max-content;
+  border-radius: 8px;
+
+  &__success {
+    color: var(--deep-green);
+    background-color: var(--light-green);
+  }
+
+  &__warning {
+    color: var(--orange);
+    background-color: var(--cream);
+  }
+
+  &__info {
+    color: var(--blue-main);
+    background-color: var(--light-blue);
+  }
+
+  &__neutral {
+    color: var(--black-main);
+    background-color: var(--gray-20);
+  }
+
+  &__large {
+    font-size: 12px;
+    padding: 5px 12px;
+  }
+
+  &__small {
+    padding: 1px 8px 3px;
+    font-size: 10px;
+  }
+}

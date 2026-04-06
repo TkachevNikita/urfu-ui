@@ -1,0 +1,57 @@
+.u-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--white);
+  max-width: 600px;
+  padding: 30px;
+  border-radius: 14px;
+  min-width: 340px;
+  animation: enter 0.2s ease-in-out;
+
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  &__action {
+    border: none;
+    color: var(--blue-main);
+    background: var(--light-blue);
+    border-radius: 100%;
+    padding: 12px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 599px) {
+    width: 100vw;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+
+@keyframes enter {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.98);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes leave {
+  0% {
+    opacity: 0;
+    transform: translateY(0) scale(1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(30px) scale(0.98);
+  }
+}

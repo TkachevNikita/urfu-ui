@@ -3,14 +3,14 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "storybook": "ng run uikit:storybook",
+    "build:storybook": "ng run uikit:build-storybook",
+    "build:u-core": "ng build u-core"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "^21.2.0",
+    "@angular/cdk": "^21.2.3",
     "@angular/common": "^21.2.0",
     "@angular/compiler": "^21.2.0",
     "@angular/core": "^21.2.0",
@@ -23,16 +23,31 @@
     "zone.js": "~0.15.1"
   },
   "devDependencies": {
+    "@angular-eslint/eslint-plugin": "^21.3.1",
     "@angular/build": "^21.2.0",
     "@angular/cli": "^21.2.0",
     "@angular/compiler-cli": "^21.2.0",
     "@types/jasmine": "~5.1.0",
+    "@typescript-eslint/eslint-plugin": "^8.57.1",
+    "@typescript-eslint/parser": "^8.57.1",
+    "eslint": "^10.0.3",
+    "eslint-plugin-prettier": "^5.5.5",
     "jasmine-core": "~5.1.0",
+    "jsdom": "^28.0.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "typescript": "~5.9.3"
+    "ng-packagr": "^21.2.0",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.57.1",
+    "vitest": "^4.0.8",
+    "storybook": "^10.3.3",
+    "@storybook/angular": "^10.3.3",
+    "@angular-devkit/build-angular": "^21.2.0",
+    "@angular-devkit/architect": "^0.2102.0",
+    "@angular-devkit/core": "^21.2.0",
+    "eslint-plugin-storybook": "^10.3.3"
   }
 }
