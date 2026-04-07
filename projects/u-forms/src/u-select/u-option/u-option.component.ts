@@ -4,8 +4,8 @@ import {
   input,
   signal,
 } from '@angular/core';
-import { UCheckboxComponent } from '@urfu-ui/u-forms';
 import { USelectComponent } from '../u-select.component';
+import { UCheckboxComponent } from '../../u-checkbox/u-checkbox.component';
 
 @Component({
   selector: 'u-option',

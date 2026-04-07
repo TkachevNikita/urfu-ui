@@ -5,7 +5,8 @@
     "ng": "ng",
     "storybook": "ng run uikit:storybook",
     "build:storybook": "ng run uikit:build-storybook",
-    "build:u-core": "ng build u-core"
+    "build:u-core": "ng build u-core",
+    "build:u-forms": "ng build u-forms"
   },
   "private": true,
   "dependencies": {
