@@ -11,7 +11,7 @@
 
   &:not(.bottom) {
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       top: 100%;
       left: 50%;
@@ -24,7 +24,7 @@
 
   &.bottom {
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       bottom: 100%;
       left: 50%;

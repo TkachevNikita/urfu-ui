@@ -1,16 +1,13 @@
 import type { Meta, StoryObj } from '@storybook/angular';
 import { Component, Input } from '@angular/core';
-import {UOptionComponent, USelectComponent} from "@urfu-ui/u-forms";
+import { UOptionComponent, USelectComponent } from '@urfu-ui/u-forms';
 
 @Component({
   selector: 'app-select-wrapper',
   standalone: true,
   imports: [USelectComponent, UOptionComponent],
   template: `
-    <u-select
-      [placeholder]="placeholder"
-      [multiple]="multiple"
-    >
+    <u-select [placeholder]="placeholder" [multiple]="multiple">
       <u-option [value]="1" label="Вариант 1"></u-option>
       <u-option [value]="2" label="Вариант 2"></u-option>
       <u-option [value]="3" label="Вариант 3"></u-option>

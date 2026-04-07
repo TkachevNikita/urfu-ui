@@ -1,16 +1,10 @@
-<div
-  animate.enter="enter"
-  class="u-modal"
->
+<div animate.enter="enter" class="u-modal">
   <div class="u-modal__head">
     <h3 class="u-modal__title">
       {{ title() }}
     </h3>
-    <button
-      class="u-modal__action"
-      (click)="close()"
-    >
-      <u-icon [size]="18" iconId="cross"/>
+    <button class="u-modal__action" (click)="close()">
+      <u-icon [size]="18" iconId="cross" />
     </button>
   </div>
   <ng-template #content></ng-template>

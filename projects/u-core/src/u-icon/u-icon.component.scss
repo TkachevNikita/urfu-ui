@@ -1,10 +1,12 @@
 @font-face {
-  font-family: 'urfu-ui-icon-font';
-  src: url('./fonts/urfu-ui-icon-font.eot?847bb0');
-  src: url('./fonts/urfu-ui-icon-font.eot?847bb0#iefix') format('embedded-opentype'),
-  url('./fonts/urfu-ui-icon-font.ttf?847bb0') format('truetype'),
-  url('./fonts/urfu-ui-icon-font.woff?847bb0') format('woff'),
-  url('./fonts/urfu-ui-icon-font.svg?847bb0#urfu-ui-icon-font') format('svg');
+  font-family: "urfu-ui-icon-font";
+  src: url("./fonts/urfu-ui-icon-font.eot?847bb0");
+  src:
+    url("./fonts/urfu-ui-icon-font.eot?847bb0#iefix")
+      format("embedded-opentype"),
+    url("./fonts/urfu-ui-icon-font.ttf?847bb0") format("truetype"),
+    url("./fonts/urfu-ui-icon-font.woff?847bb0") format("woff"),
+    url("./fonts/urfu-ui-icon-font.svg?847bb0#urfu-ui-icon-font") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -15,7 +17,7 @@
 }
 
 .u-icon {
-  font-family: 'urfu-ui-icon-font' !important;
+  font-family: "urfu-ui-icon-font" !important;
   speak: never;
   font-style: normal;
   font-weight: normal;

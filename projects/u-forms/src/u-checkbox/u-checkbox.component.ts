@@ -1,6 +1,11 @@
-import { ChangeDetectionStrategy, Component, forwardRef, model } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  forwardRef,
+  model,
+} from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import {UIconComponent} from "@urfu-ui/u-core";
+import { UIconComponent } from '@urfu-ui/u-core';
 
 @Component({
   selector: 'u-checkbox',

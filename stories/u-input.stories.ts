@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/angular';
-import {UInputComponent} from "@urfu-ui/u-forms";
+import { UInputComponent } from '@urfu-ui/u-forms';
 
 const meta: Meta<UInputComponent> = {
   title: 'UForms/UInput',

@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/angular';
 import { Component, Input } from '@angular/core';
-import {UControlComponent, UInputComponent} from "@urfu-ui/u-forms";
+import { UControlComponent, UInputComponent } from '@urfu-ui/u-forms';
 
 @Component({
   selector: 'app-control-wrapper',

@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/angular';
-import {UBadgeComponent} from "@urfu-ui/u-core";
+import { UBadgeComponent } from '@urfu-ui/u-core';
 
 const meta: Meta<UBadgeComponent> = {
   title: 'u-core/UBadge',

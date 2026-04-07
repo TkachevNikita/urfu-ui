@@ -2,8 +2,13 @@ import { Meta, StoryObj } from '@storybook/angular';
 import { componentWrapperDecorator, moduleMetadata } from '@storybook/angular';
 import { OverlayModule } from '@angular/cdk/overlay';
 import { Component, inject, input } from '@angular/core';
-import {MODAL_DATA, UButtonComponent, UModalComponent, UModalService} from "@urfu-ui/u-core";
-import {JsonPipe} from "@angular/common";
+import {
+  MODAL_DATA,
+  UButtonComponent,
+  UModalComponent,
+  UModalService,
+} from '@urfu-ui/u-core';
+import { JsonPipe } from '@angular/common';
 
 @Component({
   template: `
@@ -13,9 +18,7 @@ import {JsonPipe} from "@angular/common";
     </div>
   `,
   standalone: true,
-  imports: [
-    JsonPipe
-  ]
+  imports: [JsonPipe],
 })
 class ModalContentExampleComponent {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -25,7 +28,9 @@ class ModalContentExampleComponent {
 @Component({
   template: `
     <div>
-      <u-button theme="prime" (click)="openModal()">Открыть модальное окно</u-button>
+      <u-button theme="prime" (click)="openModal()"
+        >Открыть модальное окно</u-button
+      >
     </div>
   `,
   standalone: true,
@@ -39,7 +44,7 @@ class ModalHostComponent {
   openModal() {
     this.modalService.open(ModalContentExampleComponent, {
       title: this.modalTitle(),
-      data: { id: 123, info: 'Test data' }
+      data: { id: 123, info: 'Test data' },
     });
   }
 }
@@ -52,7 +57,10 @@ const meta: Meta<ModalHostComponent> = {
     moduleMetadata({
       imports: [OverlayModule, UModalComponent, ModalContentExampleComponent],
     }),
-    componentWrapperDecorator((story) => `<div style="position: relative; height: 100vh;">${story}</div>`),
+    componentWrapperDecorator(
+      (story) =>
+        `<div style="position: relative; height: 100vh;">${story}</div>`,
+    ),
   ],
   argTypes: {
     modalTitle: {

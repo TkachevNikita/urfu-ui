@@ -1,6 +1,11 @@
-import {ChangeDetectionStrategy, Component, input, signal} from '@angular/core';
-import {UCheckboxComponent} from "@urfu-ui/u-forms";
-import {USelectComponent} from "../u-select.component";
+import {
+  ChangeDetectionStrategy,
+  Component,
+  input,
+  signal,
+} from '@angular/core';
+import { UCheckboxComponent } from '@urfu-ui/u-forms';
+import { USelectComponent } from '../u-select.component';
 
 @Component({
   selector: 'u-option',

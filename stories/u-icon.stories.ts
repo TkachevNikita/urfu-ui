@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/angular';
-import {UIconComponent} from "@urfu-ui/u-core";
+import { UIconComponent } from '@urfu-ui/u-core';
 
 const meta: Meta<UIconComponent> = {
   title: 'u-core/UIcon',

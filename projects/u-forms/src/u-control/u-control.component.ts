@@ -1,9 +1,5 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  input,
-} from '@angular/core';
-import {UIconComponent, UTooltipDirective} from '@urfu-ui/u-core';
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
+import { UIconComponent, UTooltipDirective } from '@urfu-ui/u-core';
 
 @Component({
   selector: 'u-control',

@@ -22,8 +22,8 @@ import { Overlay, OverlayRef } from '@angular/cdk/overlay';
 import { TemplatePortal } from '@angular/cdk/portal';
 import { take } from 'rxjs';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
-import {UIconComponent} from "@urfu-ui/u-core";
-import {UOptionComponent} from "./u-option/u-option.component";
+import { UIconComponent } from '@urfu-ui/u-core';
+import { UOptionComponent } from './u-option/u-option.component';
 
 @Component({
   selector: 'u-select',
@@ -39,7 +39,9 @@ import {UOptionComponent} from "./u-option/u-option.component";
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [UIconComponent],
 })
-export class USelectComponent<T> implements ControlValueAccessor, AfterContentInit, OnDestroy {
+export class USelectComponent<T>
+  implements ControlValueAccessor, AfterContentInit, OnDestroy
+{
   private readonly cdr = inject(ChangeDetectorRef);
   private readonly destroyRef = inject(DestroyRef);
   private readonly overlay = inject(Overlay);
@@ -89,7 +91,6 @@ export class USelectComponent<T> implements ControlValueAccessor, AfterContentIn
   }
 
   public togglePanel(): void {
-    // eslint-disable-next-line @typescript-eslint/no-unused-expressions
     this.overlayRef ? this.close() : this.open();
   }
 
@@ -98,7 +99,7 @@ export class USelectComponent<T> implements ControlValueAccessor, AfterContentIn
       const isSelected = this.selected.includes(option.value());
 
       this.selected = isSelected
-        ? this.selected.filter(v => v !== option.value())
+        ? this.selected.filter((v) => v !== option.value())
         : [...this.selected, option.value()];
 
       this.onChange(this.selected);
@@ -134,7 +135,14 @@ export class USelectComponent<T> implements ControlValueAccessor, AfterContentIn
     const positionStrategy = this.overlay
       .position()
       .flexibleConnectedTo(hostElement)
-      .withPositions([{ originX: 'start', originY: 'bottom', overlayX: 'start', overlayY: 'top' }])
+      .withPositions([
+        {
+          originX: 'start',
+          originY: 'bottom',
+          overlayX: 'start',
+          overlayY: 'top',
+        },
+      ])
       .withDefaultOffsetY(4);
 
     this.overlayRef = this.overlay.create({

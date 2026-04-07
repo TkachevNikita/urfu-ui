@@ -6,7 +6,11 @@
   [class.has-icon-right]="!!iconRightId()"
 >
   @if (iconLeftId()) {
-    <u-icon class="u-input__icon u-input__icon--left" [iconId]="iconLeftId()" [size]="24" />
+    <u-icon
+      class="u-input__icon u-input__icon--left"
+      [iconId]="iconLeftId()"
+      [size]="24"
+    />
   }
 
   <input
@@ -21,6 +25,10 @@
   />
 
   @if (iconRightId()) {
-    <u-icon class="u-input__icon u-input__icon--right" [iconId]="iconRightId()" [size]="24" />
+    <u-icon
+      class="u-input__icon u-input__icon--right"
+      [iconId]="iconRightId()"
+      [size]="24"
+    />
   }
 </div>

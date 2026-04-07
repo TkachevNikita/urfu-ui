@@ -4,7 +4,7 @@
   "compilerOptions": {
     "paths": {
       "@urfu-ui/u-core": ["./projects/u-core/src/public-api.ts"],
-      "@urfu-ui/u-forms": ["./projects/u-forms/src/public-api.ts"],
+      "@urfu-ui/u-forms": ["./projects/u-forms/src/public-api.ts"]
     },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,

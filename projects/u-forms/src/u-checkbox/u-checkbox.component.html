@@ -4,10 +4,10 @@
     [checked]="checked()"
     (change)="onCheckboxChange($event)"
     (blur)="onTouched()"
-  >
+  />
   <span class="u-checkbox__selection">
     @if (checked()) {
-      <u-icon [iconId]="'check'"/>
+      <u-icon [iconId]="'check'" />
     }
   </span>
   <span class="u-checkbox__text">

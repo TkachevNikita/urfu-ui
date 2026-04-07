@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/angular';
-import {UCheckboxComponent} from "@urfu-ui/u-forms";
+import { UCheckboxComponent } from '@urfu-ui/u-forms';
 
 const meta: Meta<UCheckboxComponent> = {
   title: 'UForms/UCheckbox',
